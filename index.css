@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0; 
+  border-style: solid;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+background-color: #0284c7;
+font-family: 'Arvo', serif;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    background-color:transparent;
+}
+
+#nav-logo{
+color: #082f49;
+}
+
+#github{
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: #082f49;
+}
+
+#github:hover{
+transform: scale(1.2);
+}
+
+/* Main */
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    padding-top: 1.8rem;
+}
+
+#main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background-color:#0369a1;
+    border-radius: 0.5rem;
+    border-color: #082f49;
+    border-width: 0.2rem;
+    height: 70vh;
+}
+
+#title{
+    color: #082f49;
+}
+
+#main-input{
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 90%;
+    background-color: #c5e9fc;
+    font-size: 1rem;
+    padding: 0 0.62rem;
+    padding: 0.7rem;
+}
+
+#countries-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 3.6rem;
+    overflow: auto;
+    gap: 7rem;
+
+}
+
+#countries-div::-webkit-scrollbar{
+    display: none;
+}
+
+.countries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flags{
+    border-radius: 0.5rem;
+    width: 85%;
+}
+
+.names{
+    color: #082f49;
+}
+
+.data{
+    color: #082f49;
+}
+
+/* @media (min-width: 768px){
+    #main-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+} */
