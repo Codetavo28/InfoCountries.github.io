@@ -57,12 +57,12 @@ transform: scale(1.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 95%;
     background-color:#0369a1;
     border-radius: 0.5rem;
     border-color: #082f49;
     border-width: 0.2rem;
-    height: 70vh;
+    height: 52vh;
 }
 
 #title{
@@ -103,7 +103,7 @@ transform: scale(1.2);
 
 .flags{
     border-radius: 0.5rem;
-    width: 85%;
+    height: 15vh;
 }
 
 .names{
@@ -114,12 +114,18 @@ transform: scale(1.2);
     color: #082f49;
 }
 
-/* @media (min-width: 768px){
+@media (min-width: 768px){
     #main-div{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 65%;
+        height: 65vh;
     }
-} */
+
+    .flags{
+        border-radius: 0.5rem;
+        height: 15rem;
+    }
+}
